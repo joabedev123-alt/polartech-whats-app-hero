@@ -1,0 +1,11 @@
+import{c as s,j as e,C as r,W as t}from"./index-i-fcnmUA.js";/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const i=s("MessageSquare",[["path",{d:"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z",key:"1lielz"}]]);/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const c=s("Target",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["circle",{cx:"12",cy:"12",r:"6",key:"1vlfrh"}],["circle",{cx:"12",cy:"12",r:"2",key:"1c9p78"}]]),n=[{icon:r,title:"Agilidade no agendamento",description:"Resposta rápida e horários flexíveis para atender sua necessidade."},{icon:i,title:"Comunicação clara e direta",description:"Explicamos cada etapa do serviço de forma simples e transparente."},{icon:t,title:"Serviço técnico e organizado",description:"Profissionalismo em cada atendimento, do diagnóstico à solução."},{icon:c,title:"Atendimento focado em resolver",description:"Nosso objetivo é solucionar seu problema de forma eficiente."}],d=()=>e.jsx("section",{className:"py-20 lg:py-28 bg-background",children:e.jsxs("div",{className:"container",children:[e.jsxs("div",{className:"text-center max-w-2xl mx-auto mb-16",children:[e.jsx("span",{className:"text-secondary font-semibold text-sm uppercase tracking-wider mb-3 block",children:"Por que escolher a Polartech"}),e.jsx("h2",{className:"text-3xl md:text-4xl font-bold text-foreground mb-4",children:"Diferenciais do nosso atendimento"})]}),e.jsx("div",{className:"grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8",children:n.map((o,a)=>e.jsxs("div",{className:"relative bg-gradient-to-br from-navy/5 to-navy/10 rounded-xl p-6 lg:p-8 border border-navy/10 hover:border-secondary/30 transition-all group",children:[e.jsx("div",{className:"w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors",children:e.jsx(o.icon,{className:"w-7 h-7 text-gold"})}),e.jsx("h3",{className:"text-lg font-bold text-foreground mb-3",children:o.title}),e.jsx("p",{className:"text-muted-foreground text-sm",children:o.description})]},a))})]})});export{d as BenefitsSection};
