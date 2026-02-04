@@ -16,7 +16,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Polartech custom variants
-        cta: "bg-accent text-accent-foreground font-bold hover:bg-gold-hover shadow-gold hover:shadow-gold-hover hover:-translate-y-0.5",
+        cta: "bg-accent text-accent-foreground font-bold hover:bg-[#25D366] hover:text-white shadow-gold hover:shadow-green-900/20 hover:-translate-y-0.5",
         "outline-hero": "border-2 border-white/80 bg-transparent text-white font-semibold hover:bg-white/10 hover:border-white",
       },
       size: {
@@ -36,7 +36,7 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean;
 }
 

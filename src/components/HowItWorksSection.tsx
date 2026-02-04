@@ -29,7 +29,7 @@ const steps = [
 
 export const HowItWorksSection = () => {
   return (
-    <section id="como-funciona" className="py-20 lg:py-28 bg-background">
+    <section id="como-funciona" className="py-12 md:py-20 lg:py-28 bg-background">
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

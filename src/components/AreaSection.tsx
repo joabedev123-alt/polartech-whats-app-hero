@@ -1,11 +1,12 @@
-import { MapPin, MessageCircle } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppLink, BUSINESS_INFO } from "@/lib/constants";
 import technicianImage from "@/assets/technician-working.jpeg";
 
 export const AreaSection = () => {
   return (
-    <section id="area" className="py-20 lg:py-28 bg-navy relative overflow-hidden">
+    <section id="area" className="py-12 md:py-20 lg:py-28 bg-navy relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 frost-overlay opacity-10" />
 
@@ -40,7 +41,7 @@ export const AreaSection = () => {
             {/* CTA */}
             <a href={getWhatsAppLink("Olá! Gostaria de confirmar se vocês atendem no meu bairro.")} target="_blank" rel="noopener noreferrer">
               <Button variant="cta" size="lg" className="gap-2">
-                <MessageCircle className="w-5 h-5" />
+                <FaWhatsapp className="w-5 h-5" />
                 Confirmar atendimento no meu bairro
               </Button>
             </a>

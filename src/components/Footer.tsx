@@ -21,7 +21,7 @@ export const Footer = () => {
             <img
               src={logoImage}
               alt="Polartech Refrigerações"
-              className="h-16 mb-4"
+              className="h-24 mb-4"
             />
             <p className="text-white/70 max-w-sm">
               Serviço técnico especializado em manutenção e conserto de refrigeração. Atendimento em Belo Horizonte e região metropolitana (até 50km).

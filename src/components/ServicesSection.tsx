@@ -1,4 +1,5 @@
-import { Wrench, Search, RefreshCw, Sparkles, Building2, HeadphonesIcon, MessageCircle } from "lucide-react";
+import { Wrench, Search, RefreshCw, Sparkles, Building2, HeadphonesIcon } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppLink } from "@/lib/constants";
 
@@ -37,7 +38,7 @@ const services = [
 
 export const ServicesSection = () => {
   return (
-    <section id="servicos" className="py-20 lg:py-28 bg-ice">
+    <section id="servicos" className="py-12 md:py-20 lg:py-28 bg-ice">
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -71,7 +72,7 @@ export const ServicesSection = () => {
               {/* Mini CTA */}
               <a href={getWhatsAppLink(`Olá! Tenho interesse no serviço: ${service.title}`)}>
                 <Button variant="link" className="p-0 h-auto text-secondary font-semibold gap-1">
-                  <MessageCircle className="w-4 h-4" />
+                  <FaWhatsapp className="w-4 h-4" />
                   Agendar
                 </Button>
               </a>

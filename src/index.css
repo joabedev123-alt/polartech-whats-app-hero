@@ -58,13 +58,13 @@
     --gold: 45 93% 47%;
     --gold-hover: 45 93% 40%;
     --gold-light: 45 90% 55%;
-    
+
     /* Gradients */
     --gradient-navy: linear-gradient(135deg, hsl(213 60% 12%) 0%, hsl(213 56% 22%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(213 60% 12% / 0.95) 0%, hsl(213 56% 20% / 0.85) 100%);
     --gradient-frost: linear-gradient(180deg, hsl(200 80% 95%) 0%, hsl(0 0% 100%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(45 93% 47%) 0%, hsl(40 95% 55%) 100%);
-    
+
     /* Shadows */
     --shadow-card: 0 4px 20px -4px hsl(213 56% 17% / 0.1);
     --shadow-card-hover: 0 8px 30px -4px hsl(213 56% 17% / 0.15);
@@ -121,16 +121,20 @@
 }
 
 @layer components {
+
   /* WhatsApp floating button pulse animation */
   .whatsapp-pulse {
     animation: whatsapp-pulse 2s ease-in-out infinite;
   }
 
   @keyframes whatsapp-pulse {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: scale(1);
       box-shadow: 0 4px 20px hsl(142 70% 45% / 0.4);
     }
+
     50% {
       transform: scale(1.05);
       box-shadow: 0 6px 30px hsl(142 70% 45% / 0.6);
@@ -139,7 +143,7 @@
 
   /* Frost/Ice texture overlay */
   .frost-overlay {
-    background: 
+    background:
       radial-gradient(ellipse at 20% 30%, hsl(200 80% 95% / 0.3) 0%, transparent 50%),
       radial-gradient(ellipse at 80% 70%, hsl(200 80% 95% / 0.2) 0%, transparent 50%);
   }
@@ -153,7 +157,7 @@
   .card-hover {
     transition: all 0.3s ease;
   }
-  
+
   .card-hover:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-card-hover);
@@ -221,5 +225,19 @@
 
   .border-gold {
     border-color: hsl(var(--gold));
+  }
+
+  .animate-scroll-brands {
+    animation: scroll-brands 40s linear infinite;
+  }
+
+  @keyframes scroll-brands {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-100% / 3));
+    }
   }
 }

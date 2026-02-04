@@ -1,4 +1,5 @@
-import { MessageCircle, Clock, MapPin, Phone } from "lucide-react";
+import { Clock, MapPin, Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppLink, WHATSAPP_CONFIG, BUSINESS_INFO } from "@/lib/constants";
 
@@ -25,7 +26,7 @@ const contactCards = [
 
 export const ContactSection = () => {
   return (
-    <section id="contato" className="py-20 lg:py-28 bg-navy relative overflow-hidden">
+    <section id="contato" className="py-12 md:py-20 lg:py-28 bg-navy relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 frost-overlay opacity-5" />
       <div className="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl" />
@@ -43,7 +44,7 @@ export const ContactSection = () => {
 
           <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
             <Button variant="cta" size="xl" className="gap-3 text-lg px-10">
-              <MessageCircle className="w-6 h-6" />
+              <FaWhatsapp className="w-6 h-6" />
               Falar com o técnico agora
             </Button>
           </a>
