@@ -85,7 +85,7 @@ export const Header = () => {
             src={logoImage}
             alt="Polartech Refrigerações"
             // Increased sizes: h-20 (scrolled) and h-32 (default) - significantly larger
-            className={`transition-all duration-300 ${isScrolled ? "h-20" : "h-32"}`}
+            className={`transition-all duration-300 ${isScrolled ? "h-14 md:h-20" : "h-20 md:h-32"}`}
           />
         </a>
 
